@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f8e9;
+}
+header {
+background-image: url('https://img.freepik.com/vector-gratis/fondo-monocromatico-acuarela-mandalas_23-2148865944.jpg'
+); /* Cambia la URL por la imagen que desees */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;}
+header h1 {
+    font-size: 3rem;
+    color: #000000;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.btn-primary {
+    background-color: #824caf; 
+    border-color: #000000;
+    border-radius: 30%  ;
+}
+
+.btn-success {
+    background-color: #824caf; 
+    border-color: #000000;
+    border-radius: 30%  ;
+}
+
+.card {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #f8f9fa; /* Color de fondo */
+    height: 200px; /* Mismo alto que el header */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+footer img {
+    width: 80px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    margin: 0 20px; /* Espacio entre imágenes */
+}

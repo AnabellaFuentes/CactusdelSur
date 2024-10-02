@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal de Anabella Fuentes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body onload="showAbout()">
+
+<header class="text-center py-5">
+    <h1>Anabella Fuentes</h1>
+    <h2>Mi primera WEB</h2>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <button class="btn btn-primary" onclick="showAbout()">Acerca de Mi</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-success" onclick="showWork()">Laboral</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="content" class="container mt-5"></div>
+
+<script>
+    function showAbout() {
+        document.getElementById('content').innerHTML = `
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="yo.jpg" class="card-img-top" alt="Imagen 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sobre mí</h5>
+                            <p class="card-text">Nombre y Apellido: Anabella Fuentes<br>
+                            Edad: 39 años<br>
+                            Residencia: La Rioja-Capital<br>
+                            Mujer, Estudiante, Trabajadora, Emprendedora, y sobretodo Mamá</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="mamis.jpg" class="card-img-top" alt="Imagen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sociales</h5>
+                            <p class="card-text">Formo parte del grupo social Mamis Activas.<br> Realizamos el acompañamiento a las familias de niños con diagnóstico reciente de Autismo y otros trastornos del neurodesarrollo.<p>Nuestro grupo de <a href="https://chat.whatsapp.com/E8ZGlD2HHVY9K6EaFYOvNF" target="_blank">WHATSAPP</a></p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    function showWork() {
+        document.getElementById('content').innerHTML = `
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="caps.jpg" class="card-img-top" alt="Trabajo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ministerio de Salud Pública<br>Dirección de Determinantes de la Salud<br>Aps</h5>
+                            <p class="card-text">Cumplo función administrativa, de data enter y formo parte de los equipos de supervisión en la implementación del proyecto acuerdos de gestión bajo el Plan Provincial de Salud.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="unlar.jpg" class="card-img-top" alt="Trabajo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Formación Académica</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Actualmente me encuentro cursando el último año de la Tecnicatura Universitaria de Análisis de Sistemas de Información Médica.</li>
+                                    <li>3° Año de la Tecnicatura en Biogenética.</li>
+                                    <li>5to Año de Bioquímica.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="cactusdelsur.jpg" class="card-img-top" alt="Trabajo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Emprendimiento</h5>
+                            <p class="card-text">Es un emprendimiento familiar denominado <strong>CACTUS DEL SUR</strong> en donde nos dedicamos a la venta de Cactus y Suculentas.<br>
+                            <p>Visita nuestras <a href="https://www.facebook.com/cactus.del.sur.2023?mibextid=ZbWKwL" target="_blank">REDES.</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer>
+    <a href="https://www.facebook.com/ana318?mibextid=ZbWKwL">
+        <img src="facebook-logo.png" alt="Ejemplo 1">
+    </a>
+    <a href="https://www.instagram.com/anabella.fuentes?igsh=MzgzeTk2Y21jbHp6">
+        <img src="instagram-logo2.png" alt="Ejemplo 2">
+    </a>
+    <a href="https://wa.me/380154791933"target="_blank">
+        <img src="whatsapp-logo2.png" alt="Ejemplo 3">
+    </a>
+    <a href="mailto:aejf85@gmail.com?subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios.">
+        <img src="gmail-logo.png" alt="Ejemplo 4">
+    </a>
+</footer>
+</html>
